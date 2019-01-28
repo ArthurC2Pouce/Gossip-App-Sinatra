@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+			<title>The Gossip Project</title>
+		</head>
+		<body>
+			<h1>Bienvenue sur Gossips !</h1>
+			<a href="/gossips/new/">cliques sur ce lien pour créer un nouveau Gossip</a>
+			<h2>Liste des derniers Gossips</h2>
+
+			<% gossips.each do |gossip| %>
+        <p>
+          <%= gossip.author %><br/>
+          <%= gossip.content %>
+        </p>
+      <% end %>
+
+
+		</body>
+	</html>
